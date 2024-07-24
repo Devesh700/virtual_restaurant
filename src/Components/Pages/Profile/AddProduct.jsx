@@ -37,7 +37,7 @@ const data  = userData ?? {};
         formData.append('seller', userData._id);
 
         try {
-            const response = await axios.post('http://localhost:4000/api/products/addproduct', formData, {
+            const response = await axios.post('https://virtual-restaurant-backend.onrender.com/api/products/addproduct', formData, {
                 headers: {
                     'Content-Type': 'multipart/form-data'
                 }

@@ -32,7 +32,7 @@ const Dashboard = () => {
         // Handle submitting the order data
         alert(JSON.stringify(orderData))
         try{
-            let res=await fetch("http://localhost:4000/api/orders/placeorder",{
+            let res=await fetch("https://virtual-restaurant-backend.onrender.com/api/orders/placeorder",{
                 method:"POST",
                 body:JSON.stringify(orderData),
                 headers:{
@@ -63,7 +63,7 @@ const Dashboard = () => {
 
     const fetchProducts = async () => {
         try {
-            const response = await axios.get('http://localhost:4000/api/products');
+            const response = await axios.get('https://virtual-restaurant-backend.onrender.com/api/products');
             setProducts(response.data.data);
         } catch (error) {
             console.error('Error fetching products:', error);

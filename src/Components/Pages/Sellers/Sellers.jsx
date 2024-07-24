@@ -12,7 +12,7 @@ const Sellers = () => {
   const navigate=useNavigate();
   const [seller,setseller]=useState([]);
   const GetSellers=async()=>{
-    let sellers=await fetch("http://localhost:4000/api/seller/getsellers",{
+    let sellers=await fetch("https://virtual-restaurant-backend.onrender.com/api/seller/getsellers",{
       method:"GET"
     });
     sellers=await sellers.json();

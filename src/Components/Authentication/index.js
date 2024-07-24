@@ -1,5 +1,5 @@
   const RegisterCustomer = async(data,navigate) => {
-      let res=await fetch("http://localhost:4000/api/user/register",{
+      let res=await fetch("https://virtual-restaurant-backend.onrender.com/api/user/register",{
         method:"POST",
         headers:{
           "Content-Type":"application/json"

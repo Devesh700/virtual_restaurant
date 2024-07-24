@@ -21,7 +21,7 @@ const SellerForm = () => {
 const handleSubmit = async(e) => {
     e.preventDefault();
     if (flag) {
-      let res=await fetch("http://localhost:4000/api/seller/register",{
+      let res=await fetch("https://virtual-restaurant-backend.onrender.com/api/seller/register",{
         method:"POST",
         headers:{
           "Content-Type":"application/json"

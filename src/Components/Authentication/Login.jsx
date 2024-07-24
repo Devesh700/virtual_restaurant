@@ -9,7 +9,7 @@ const CustomerLogin = () => {
 
 const handleSubmit = async(e) => {
     e.preventDefault();
-    let res=await fetch("http://localhost:4000/api/user/login",{
+    let res=await fetch("https://virtual-restaurant-backend.onrender.com/api/user/login",{
       method:"POST",
       body:JSON.stringify({email,password}),
       headers:{
@@ -66,7 +66,7 @@ const SellerLogin = () => {
 
   const handleSubmit = async(e) => {
     e.preventDefault();
-    let res=await fetch("http://localhost:4000/api/seller/login",{
+    let res=await fetch("https://virtual-restaurant-backend.onrender.com/api/seller/login",{
       method:"POST",
       body:JSON.stringify({email:email,password:password}),
       headers:{

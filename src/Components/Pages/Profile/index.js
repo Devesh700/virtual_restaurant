@@ -7,7 +7,7 @@
   const ImageUploader=async(profileimage,setPersonalDetails,client)=>{
 
         try{
-            let res=await fetch(`http://localhost:4000/api/images/${client}`,{
+            let res=await fetch(`https://virtual-restaurant-backend.onrender.com/api/images/${client}`,{
                 method:"POST",
                 body:profileimage
             })
@@ -36,7 +36,7 @@
 
 
   const UpdateHandler = async(personalDetails,setEditable,setPersonalDetails,navigate,client) => {
-    let res=await fetch(`http://localhost:4000/api/${client}/update`,{
+    let res=await fetch(`https://virtual-restaurant-backend.onrender.com/api/${client}/update`,{
         method:"PUT",
         headers:{
             "Content-Type":"application/json"
@@ -57,7 +57,7 @@
 
 
   const HandleApproval = async (approval, user, product, order,setPersonalDetails) => {
-    let res = await fetch('http://localhost:4000/api/orders/approval', {
+    let res = await fetch('https://virtual-restaurant-backend.onrender.com/api/orders/approval', {
       method: "POST",
       headers: {
         "Content-Type": "application/json"
@@ -72,7 +72,7 @@
 
     const RemoveNotification=async ( user, product, order,setPersonalDetails) => {
       console.log("user: "+user+"product: "+product+"order: "+order)
-    let res = await fetch('http://localhost:4000/api/orders//removenotification', {
+    let res = await fetch('https://virtual-restaurant-backend.onrender.com/api/orders//removenotification', {
       method: "POST",
       headers: {
         "Content-Type": "application/json"
@@ -86,7 +86,7 @@
   }
 
   const GetProducts = async (personalDetails,setPersonalDetails,setproducts) => {
-    let res = await fetch("http://localhost:4000/api/products/getproducts", {
+    let res = await fetch("https://virtual-restaurant-backend.onrender.com/api/products/getproducts", {
       method: "POST",
       body: JSON.stringify({ _id: personalDetails.products }),
       headers: {
@@ -103,7 +103,7 @@
 
   }
   const GetProducts2 = async (personalDetails,setPersonalDetails,setproducts) => {
-    let res = await fetch("http://localhost:4000/api/products/getproducts", {
+    let res = await fetch("https://virtual-restaurant-backend.onrender.com/api/products/getproducts", {
       method: "POST",
       body: JSON.stringify({ _id: personalDetails.products }),
       headers: {
@@ -122,7 +122,7 @@
 
 
   const GetOrder = async (personalDetails,setPersonalDetails,setorders) => {
-    let res = await fetch("http://localhost:4000/api/orders", {
+    let res = await fetch("https://virtual-restaurant-backend.onrender.com/api/orders", {
       method: "POST",
       body: JSON.stringify({ _id: personalDetails.orders }),
       headers: {
@@ -141,7 +141,7 @@
 
 
   const CancelOrder=async (order)=>{
-    let res=await fetch("http://localhost:4000/api/orders/cancelorder",{
+    let res=await fetch("https://virtual-restaurant-backend.onrender.com/api/orders/cancelorder",{
       method:"POST",
       body:JSON.stringify(order),
       headers:{
