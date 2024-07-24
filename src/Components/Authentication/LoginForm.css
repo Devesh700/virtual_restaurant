@@ -1,0 +1,21 @@
+.login-form-container {
+  margin-top: 50px;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.login-form-container h2 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.btn-block {
+  width: 100%;
+}
+
+ .active{
+    border-bottom: 2px solid orangered !important;
+    /* border-radius: 1rem; */
+}

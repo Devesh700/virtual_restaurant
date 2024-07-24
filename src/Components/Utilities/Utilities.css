@@ -1,0 +1,98 @@
+
+@media screen and (min-width:768px) {
+    .border-md-start{
+    border-left: 1px solid lightgray;
+}
+}
+@media screen and (max-width:768px) {
+    .col-md-3{
+      width: 100%;
+    }
+    #active{
+      max-width: 100%;
+    }
+}
+/* ID */
+#active{
+  background-color: orangered;
+  width: clamp(100%,360px,120%);
+  z-index: 1;
+}
+
+
+/* CLASSES */
+.cursor-pointer{
+  cursor: pointer;
+}
+.img-container{
+    width: 100px;
+    height: 100px;
+    border-radius: 1.5rem;
+    overflow: hidden;
+}
+
+
+
+
+
+.item-value {
+    padding: 0rem 1rem;
+  overflow: hidden;
+  height: 0rem;
+  transition: all 0.7s ease-in-out; 
+}
+
+.logo-container{
+  aspect-ratio: 13/10;
+}
+
+.animate-h {
+    padding: 1.5rem 1rem;
+    overflow: hidden;
+  height: 5rem; 
+  min-height: max-content !important;
+  /* max-height: max-content !important; */
+  transition: all 0.7s ease-in-out;
+}
+.bg-contact{
+  background-image: url(/assets/hero-bg.jpg);
+  background-size: 100% 100%;
+}
+.main-contact{
+    min-height: 100dvh;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  position: relative;
+}
+.contact-container{
+  background-color: rgba(250, 154, 9, 0.5) !important;
+  border-radius: 0.6rem;
+}
+.pw-ab-30{
+  position: absolute;
+  /* width: max-content; */
+  height: max-content;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.sold-slip{
+  transform: translate(-50% ,-50%) ;
+}
+.sold-slip:before{
+  content:"";
+  width: 54px;
+  height: 54px;
+  border-radius: 50%;
+  border:1px solid;
+  position: absolute;
+  background-color: white;
+  left: -30px;
+  top: 0px;
+}
+
+.w-280{
+     aspect-ratio: 4/5;
+    width: clamp(280px,300px,90%);
+}

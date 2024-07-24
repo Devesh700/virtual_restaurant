@@ -1,0 +1,45 @@
+/* CSS SORTED ALPHABETICALLY */
+
+.bg-hero{
+    background-image: url("/assets/hero-bg.jpg");
+    background-size: cover;
+    border-bottom-left-radius: 3rem;
+    border-bottom-right-radius: 3rem;
+}
+.bg-overlay{
+    background-color: rgba(245, 108, 4, 0.5);
+}
+.form-input{
+    font-size: 1rem;
+    padding: 1rem;
+    border-radius: 1rem;
+    /* outline: orange 1px solid; */
+    border: 1px solid rgba(186, 183, 183,0.4);
+    margin-right: 2%;
+}
+.form-input:focus ,.form-input:hover{
+    outline: orange 2px groove;
+    transition: outline 50ms linear;
+    color: orange;
+}
+.shadow-dark{
+    box-shadow: 10px 14px 0px 0px rgb(36, 36, 36);
+}
+.w-md-48{
+    width: 48%;
+}
+.w-fit{
+    width: fit-content;
+}
+
+@media screen and (max-width:768px) {
+     .m-sm-3{
+        margin: 1rem auto !important;
+    }
+    .w-md-100{
+        width: 100%;
+    }    
+    .w-md-48{
+        width: 100%;
+    }
+}

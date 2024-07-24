@@ -1,0 +1,143 @@
+html,body{
+    width: 100%;
+    height: 100%;
+    overflow-x: hidden;
+}
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: "Syne", sans-serif;
+    font-optical-sizing: auto;
+}
+p,h1,h2,h3,h4,h5,h6{
+    margin-bottom: 0px !important;
+    margin-top: 0px;
+}
+.font-monospace *{
+    font-family: 'Courier New', Courier, monospace !important;
+}
+
+
+/* CUSTOM CSS */
+@media screen and (max-width:768px) {
+    .col-md-10{
+        width: 100% !important;
+}    
+}
+
+.custom-ap-3{
+    aspect-ratio: 12/10;
+}
+.custom-w-flex-3{
+    width: clamp(290px,20%,90%);
+}
+.custom-w-flex-2{
+  width: clamp(150px,13%,90%);
+}
+.custom-py-10{
+  padding-top: 5rem !important;
+  padding-bottom: 5rem !important;
+}
+.custom-w-500{
+  width: clamp(280px, 70%,90%);
+  aspect-ratio: 12/12;
+}
+.custom-w-200{
+  width: clamp(110px,40%,90%);
+}
+
+
+.custom-top-20{
+    top: 20%;
+}
+.custom-my-10{
+    margin-top: 5rem !important;
+    margin-bottom: 5rem !important;
+}
+.custom-w-300{
+    width: clamp(280px,380px,90%);
+}
+.custom-ap-7{
+    aspect-ratio: 11/13;
+}
+.custom-ap-17{
+    aspect-ratio: 18/2;
+}
+.custom-w-40{
+    width: clamp(200px,35%,90%) !important;
+}
+.custom-w-100{
+    width: clamp(200px,100%,600px) !important;
+}
+.custom-col-md-10{
+    display: flex;
+    width: 93.33%;
+}
+.custom-col-md-3{
+    width: 25%;
+}
+.custom-card-img{
+    width: 100%;
+    height: 200px;
+}
+.custom-card-width{
+    width: clamp(280px,25%,90%);
+}
+.custom-h-50vh{
+    min-height: 70dvh;
+}
+
+.custom-w-flex-4{
+    width: clamp(300px,30%,95%);
+}
+.custom-posa-topright{
+    position: absolute;
+    top: 7%;
+    right:7%;
+}
+.custom-wh-80{
+    width: 80px;
+    height: 80px;
+}
+.custom-accordion-item-container {
+  width: 100%;
+}
+.custom-accordion-item {
+  cursor: pointer;
+  border-top: 1px solid #ccc;
+  border-bottom: 1px solid #ccc;
+  padding: 16px;
+  margin: 0;
+  transition: background-color 0.3s ease;
+}
+.custom-accordion-item:hover{
+    color: orangered;
+    cursor: pointer;
+}
+.custom-accordion-item.active {
+  background-color: #f0f0f0;
+}
+
+.links-2{
+    text-decoration: none;
+    color: black;
+    font-size: 0.76rem;
+    font-weight: 700;
+    width: max-content;
+    padding: 0.1rem 0rem;
+}
+.bb-red{
+    border-bottom: 2px solid orangered;
+}
+
+
+@media screen and (max-width:915px) {
+    .custom-col-md-10{
+        width: 98%;
+        flex-direction: column;
+    }
+    .custom-col-md-3{
+        width: 100% !important;
+    }
+}

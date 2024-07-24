@@ -1,0 +1,57 @@
+
+.second-image{
+  position: absolute;
+  top: 50%;
+  left: 45%;
+  border: 10px solid white;
+}
+.slider-container {
+  position: relative;
+}
+
+.slider {
+  width: 100%;
+  overflow: hidden;
+
+}
+
+.slide {
+  display: none;
+  width: 100%;
+  padding: 20px;
+}
+
+.active {
+  display: block;
+}
+
+
+
+:is(#prevBtn, #nextBtn) {
+  background-color: #d9d8d8;
+  border: none;
+}
+:is(#prevBtn, #nextBtn):hover {
+  background-color: #050505;
+  color: white;
+}
+
+#prevBtn {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+  position: absolute;
+  top: 100%;
+  left: 10px;
+  transform: translateY(-50%);
+}
+
+#nextBtn {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+  position: absolute;
+  top: 100%;
+  right: 10px;
+  transform: translateY(-50%);
+}
